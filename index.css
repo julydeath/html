@@ -1,40 +1,118 @@
+body {
+    background: rgb(245, 244, 244);
+}
+
 main {
     padding-inline: 4rem;
     padding-block: 2rem;
 }
 
 .card {
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    position: relative;
     height: 12rem;
     width: 25vw;
     padding: 1rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    grid-row: 1 / 3;
+    background-color: white;
 }
 
-.transition {
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    color: white;
+    transition: .5s ease;
+    opacity: 0;
+    border-radius: 0.5rem;    
+}
+
+.overlay_1 {
+    background: lightgreen;
+}
+
+.overlay_2 {
+    background: orange;
+}
+
+.overlay_3 {
+    background: lightblue;
+}
+
+.overlay_4 {
+    background: rgb(2, 117, 241);
+}
+.overlay_5 {
+    background: lightcoral;
+}
+.overlay_6 {
+    background: skyblue;
+}
+
+.card:hover .overlay {
+    opacity: 10;
+    height: 100%;
+}
+
+
+.overlay h1 {
+    margin: 2rem;
+}
+
+.overlay p {
+    margin-top: 8rem;
+    margin-left: 2rem;
+    font-size: large;
+}
+
+.overlay span {
+    margin-left: 8rem;
+    font-size: small;
+}
+
+/* .transition {
     background-size: 250% 100%;
     background-position: right bottom;
     transition: background-position .5s ease;
+    background-size:100% 200%;
+    background-image:linear-gradient(to bottom, red 50%, black 50%);
+    -webkit-transition:background-position 1s;
+    -moz-transition:background-position 1s;
+    transition:background-position 1s;
 }
 
 .transition-color-1 {
-    background-image: linear-gradient(290deg, lightgreen 50%, rgb(244, 242, 242) 50%);
-}
+    background-image:linear-gradient(to bottom, rgb(244, 242, 242) 50%, lightgreen 50%);}
 .transition-color-2 {
-    background-image: linear-gradient(45deg, orange 50%, rgb(244, 242, 242) 50%);
+    background-image:linear-gradient(to bottom, rgb(244, 242, 242) 50%, orange 50%);
 }
 .transition-color-3 {
-    background-image: linear-gradient(45deg, lightblue 50%, rgb(244, 242, 242) 50%);
+    background-image:linear-gradient(to bottom, rgb(244, 242, 242) 50%, lightblue 50%);
+}
+.transition-color-4 {
+    background-image:linear-gradient(to bottom, rgb(244, 242, 242) 50%, lightblue 50%);
+}
+.transition-color-5 {
+    background-image:linear-gradient(to bottom, rgb(244, 242, 242) 50%, lightblue 50%);
+}
+.transition-color-6 {
+    background-image:linear-gradient(to bottom, rgb(244, 242, 242) 50%, lightblue 50%);
 }
 
+
 .card:hover {
-    background-position: left top;
-  }
+    background-position:0 100%;
+  } */
 
 .grid-container {
     display: grid;
-    column-gap: 50px;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
 }
 
 .logo-image {
