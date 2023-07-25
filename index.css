@@ -1,0 +1,60 @@
+main {
+    padding-inline: 4rem;
+    padding-block: 2rem;
+}
+
+.card {
+    height: 12rem;
+    width: 25vw;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    grid-row: 1 / 3;
+}
+
+.transition {
+    background-size: 250% 100%;
+    background-position: right bottom;
+    transition: background-position .5s ease;
+}
+
+.transition-color-1 {
+    background-image: linear-gradient(290deg, lightgreen 50%, rgb(244, 242, 242) 50%);
+}
+.transition-color-2 {
+    background-image: linear-gradient(45deg, orange 50%, rgb(244, 242, 242) 50%);
+}
+.transition-color-3 {
+    background-image: linear-gradient(45deg, lightblue 50%, rgb(244, 242, 242) 50%);
+}
+
+.card:hover {
+    background-position: left top;
+  }
+
+.grid-container {
+    display: grid;
+    column-gap: 50px;
+}
+
+.logo-image {
+    align-items: center;
+    height: 6rem;
+    width: 12rem;
+}
+  
+.center {
+    margin: auto;
+    height: 6rem;
+    width: 12rem;
+}
+
+.icon_1 {
+    padding-top: 8px;
+    height: 3rem;
+    width: 3rem;
+}
+
+
+
+
